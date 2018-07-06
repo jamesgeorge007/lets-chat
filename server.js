@@ -1,24 +1,30 @@
-const express = require('express');
-const socket = require('socket.io');
+var express = require('express');
+var socket = require('socket.io');
 
-app = express();
-server = app.listen(8000, ( => {
-	console.log('Running at localhost:8000');
-}));
+// App setup
+var app = express();
+var server = app.listen(8000, function(){
+    console.log('Running on localhost | PORT 8000');
+});
 
+// Static files
 app.use(express.static('public'));
 
-let io = socket(server);
-
+// Socket setup & pass server
+var io = socket(server);
 io.on('connection', (socket) => {
-	console.log('Connection Established with ID: ' + socket.id);
 
-	// Handles chat event
-	socket.on('receive', (data) => {
-		io.sockets.emit('send', data)
-	});
-	// Handles typed events.
-	socket.on('typed', (data) => {
-		io.broadcast.emit('typing', data);
-	});
+    console.log('Connection Established with ID: ', socket.id);
+
+    // Handle chat event
+    socket.on('chat', (data) => {
+        // console.log(data);
+        io.sockets.emit('chat', data);
+    });
+
+    // Handle typing event
+    socket.on('typing', (data) => {
+        socket.broadcast.emit('typing', data);
+    });
+
 });

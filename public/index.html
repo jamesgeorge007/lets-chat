@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Chat-App</title>
-</head>
-<body>
-	<div>
-		<div id="chat-window">
-			<div id="messages"></div>
-			<div id="status"></div>
-		</div>
-		<input type="text" id="handle">
-		<input type="text" id="message">
-		<button id="btn">Send</button>
-	</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Chat App</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link href="stylesheet/style.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <h1>Chat App</h1>
+            <div id="chat-window">
+                <div id="messages"></div>
+            </div>
+            <input id="handle" type="text" placeholder="Handle" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="btn">Send</button>
+        </div>
+
+
+    </body>
+    <script src="JS/client.js"></script>
 </html>
