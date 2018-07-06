@@ -1,6 +1,6 @@
 # Chat-App
 
-> A chat app built with socket.io real time engine.
+> A chat app built with socket.io, a JavaScript library/engine for adding real-time, bidirectional, event-based communication to applications.
 
 
 **Demo**
