@@ -21,4 +21,4 @@
 
 ## License
 
-> The GPL V3 License
+> The GPL V 3.0 License
