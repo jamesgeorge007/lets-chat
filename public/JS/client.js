@@ -25,5 +25,5 @@ socket.on('chat', (data) => {
 });
 
 socket.on('typing', (data) => {
-	console.log(data);
+	console.log(data + ' is typing...');
 	});
