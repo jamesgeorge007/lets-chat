@@ -2,6 +2,15 @@
 
 > A chat app built with socket.io, a JavaScript library/engine for adding real-time, bidirectional, event-based communication to applications.
 
+
+### Demo
+
+![Demo](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/Demo.gif)
+
+### Snip
+
+![Snip](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/snip.JPG)
+
 ## How it works
 
 Socket.io controls a server running on the backend which listens for 'chat' and 'typing' websocket events on port 8000. (These are custom websocket events and can be defined as needed by the developer.)
@@ -28,14 +37,6 @@ By now this should sound familiar. The server is listening for a 'chat' websocke
 
 The client, which, remember, is listening for a 'chat' websocket event from the server, then receieves this 'chat' websocket event and appends it to the `.messages` element. This way everyone can see what everyone has written.
 
-
-### Demo
-
-![Demo](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/Demo.gif)
-
-### Snip
-
-![Snip](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/snip.JPG)
 
 ## Instructions
 
