@@ -1,4 +1,4 @@
-* {
+*, body {
 	padding: none;
 	outline: none;
 	margin: none;
@@ -9,13 +9,21 @@ h1{
 	font-family: cursive;
 	font-size: 5vw;
 	color: #444;
+	margin: 0;
 }
 
 #wrapper{
 	width: 75%;
+	height: 95vh;
 	margin: 0 auto;
 	text-align: center;
 	box-shadow: 1px 2px 11px #2e2e2e;
+}
+
+#chat-window {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #chat-window #messages{
@@ -26,9 +34,11 @@ h1{
 
 #messages p{
 	margin: 1%;
+	margin-left: 8%;
 	font-size: 3vw;
-	font-style: italic;
+	font-style: sans-serif;
 	color: rgb(112, 112, 112);
+	text-align: left;
 }
 
 input{
@@ -47,7 +57,7 @@ input{
 	border: none;
 	padding: 1.5%;
 	border-radius: 3px;
-	margin-bottom: 8vh;
+	margin-bottom: 1vh;
 	background-color: royalblue;
 	color: #fff;
 }

@@ -9,19 +9,29 @@ let message = document.getElementById('message'),
 
 // Event listeners.
 btn.addEventListener('click', () => {
-    socket.emit('chat', {
-        message: message.value,
-        handle: handle.value
-    });
-    message.value = "";
+  handleChat()
 });
+
+handleKeyboardSubmit = (event) =>{
+  if(event.which == 13 || event.keyCode == 13){
+    handleChat()
+  }
+}
+
+handleChat = () => {
+  socket.emit('chat', {
+      message: message.value,
+      handle: handle.value
+  });
+  message.value = "";
+}
 
 message.addEventListener('keydown', () => {
     socket.emit('typing', handle.value);
 });
 
 socket.on('chat', (data) => {
-  messages.innerHTML += '<p><strong>' + data.handle + ' : ' + data.message + '</strong></p>';
+  messages.innerHTML += '<p><strong>' + data.handle + ': ' + data.message + '</strong></p>';
 });
 
 socket.on('typing', (data) => {
