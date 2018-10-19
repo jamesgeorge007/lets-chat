@@ -29,11 +29,11 @@ By now this should sound familiar. The server is listening for a 'chat' websocke
 The client, which, remember, is listening for a 'chat' websocket event from the server, then receieves this 'chat' websocket event and appends it to the `.messages` element. This way everyone can see what everyone has written.
 
 
-**Demo**
+### Demo
 
 ![Demo](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/Demo.gif)
 
-**Snip**
+### Snip
 
 ![Snip](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/snip.JPG)
 
