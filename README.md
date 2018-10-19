@@ -5,7 +5,7 @@
 
 **Demo**
 
-![Demo](https://github.com/jamesgeorge007/Chat-App/blob/master/assets/Demo.gif)
+![Demo](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/Demo.gif)
 
 **Snip**
 
