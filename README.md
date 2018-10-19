@@ -9,7 +9,7 @@
 
 **Snip**
 
-![Snip](https://github.com/jamesgeorge007/Chat-App/blob/master/assets/snip.JPG)
+![Snip](https://github.com/jamesgeorge007/Lets-Chat/blob/master/assets/snip.JPG)
 
 ## Instructions
 
