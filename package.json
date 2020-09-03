@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write {*,static/**/*}.js",
     "start": "nodemon server.js"
   },
   "author": "James George",
@@ -13,5 +14,8 @@
     "express": "^4.16.3",
     "nodemon": "^1.17.5",
     "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1"
   }
 }

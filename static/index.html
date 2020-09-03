@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chat App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <link href="stylesheet/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Chat App</h1>
+      <div id="chat-window">
+        <div id="messages"></div>
+      </div>
+      <input id="handle" type="text" placeholder="Handle" />
+      <input
+        id="message"
+        type="text"
+        placeholder="Message"
+        onkeydown="handleKeyboardSubmit(event)"
+      />
+      <button id="btn">Send</button>
+    </div>
+  </body>
+  <script src="JS/client.js"></script>
+</html>
